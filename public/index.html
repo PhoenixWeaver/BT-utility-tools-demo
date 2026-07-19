@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Automation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
+    textarea { width: 100%; min-height: 240px; }
+    .panel { margin-bottom: 24px; padding: 16px; border: 1px solid #ddd; border-radius: 8px; }
+    label { display: block; margin-bottom: 8px; font-weight: 600; }
+    button { padding: 10px 16px; margin-top: 8px; }
+    .response { white-space: pre-wrap; margin-top: 12px; background: #f9f9f9; padding: 12px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Supply Order Automation</h1>
+  <div class="panel">
+    <label for="orderText">Paste structured order text</label>
+    <textarea id="orderText" placeholder="FedEx Envelope (Qty. limit 30)\t0\n...\naccountno\t698583622"></textarea>
+    <button id="parseButton">Regular</button>
+  </div>
+
+  <div class="panel">
+    <h2>Regular Customer - Order Request</h2>
+    <pre id="parsedOutput">No order processed yet.</pre>
+  </div>
+
+  <div class="panel">
+    <h2>Submit Order</h2>
+    <button id="submitOrderButton">Submit Regular Order</button>
+    <div id="submitResponse" class="response"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Order History</h2>
+    <label for="historyAccount">Account No.</label>
+    <input type="text" id="historyAccount" />
+    <button id="fetchHistoryButton">Fetch History</button>
+    <div id="historyResponse" class="response"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

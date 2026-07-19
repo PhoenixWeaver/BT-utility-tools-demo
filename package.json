@@ -1,0 +1,12 @@
+{
+  "name": "order-automation",
+  "version": "1.0.0",
+  "description": "Automated customer supply order entry with global envelope/box limits and duplicate pending-order protection.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
