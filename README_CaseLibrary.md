@@ -1,15 +1,15 @@
 # 📋 Case Library and Templates Organizer  — README
 
-[DEMO](https://phoenixflix.vercel.app/caselibrary.html)
+[DEMO blank templates Case Library Template Organizer](https://phoenixflix.vercel.app/caselibrary.html)
 
 ---
 
 ## 💡 Why This Tool Exists
 
-<div style="background-color: #fffbe6; border-left: 4px solid #ffc107; padding: 15px 20px; margin: 20px 0; border-radius: 4px;">
-> **Do you have hundreds of cases and templates to manage every day?**
-> **Do you need hundreds of notes and pages just to keep your templates organized?**
-> **Do you need to remember hundreds of scenarios and cases by heart?**
+<div style="background-color: #fff9e6; border-left: 5px solid #ffc107; padding: 15px 20px; margin: 20px 0; border-radius: 5px; line-height: 1.6;">
+<p style="margin: 0 0 10px 0;"><strong>Do you have hundreds of cases and templates to manage every day?</strong></p>
+<p style="margin: 0 0 10px 0;"><strong>Do you need hundreds of notes and pages just to keep your templates organized?</strong></p>
+<p style="margin: 0;"><strong>Do you need to remember hundreds of scenarios and cases by heart?</strong></p>
 </div>
 
 You shouldn't have to.
