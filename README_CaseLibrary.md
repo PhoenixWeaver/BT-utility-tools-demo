@@ -8,9 +8,7 @@
 
 <div style="background-color: #fffbe6; border-left: 4px solid #ffc107; padding: 15px 20px; margin: 20px 0; border-radius: 4px;">
 > **Do you have hundreds of cases and templates to manage every day?**
->
 > **Do you need hundreds of notes and pages just to keep your templates organized?**
->
 > **Do you need to remember hundreds of scenarios and cases by heart?**
 </div>
 
