@@ -75,31 +75,37 @@ Core goals:
 - Real-time filtering as you type — search by template **ID**, **title**, or any **word inside the body or note**.
 - No need to know the exact name. Type a keyword and the right template surfaces immediately.
 
-### 4. Dual-Language Templates
-- Many templates carry both Vietnamese and English in a single card body.
-- One copy action delivers both languages — no switching, no extra steps.
+### 4. Comprehensive Editing
+- **Edit Everything**: Click `✏️ Edit Templates` to make card IDs, categories, titles, email bodies, and internal notes editable.
+- **Edit Category Titles**: Click `🏷️ Edit Category Titles` to rename the categories themselves in the sidebar.
 
-### 5. Inline Quick Editing
-- Click directly inside any **Customer Email** or **Internal Note** field to make quick, one-off edits before copying.
-- Replace placeholders like `[AWB Number]` or `[NEW AWB]` on the fly without entering edit mode.
+### 5. Add New Templates
+- Click the `➕ Add Template` button to dynamically create a new, blank template card in the current category.
+- The tool auto-scrolls to the new card and enters edit mode so you can fill it out immediately.
 
-### 6. Separate Copy Buttons
+### 6. Smart Persistence
+- **Save Your Work**: Click `💾 Save Templates` to permanently save all edits and new templates to your browser's `localStorage`.
+- **Data Integrity**: The save system intelligently merges changes, preventing data loss even when you save a filtered view (e.g., after a search). Your edits for hidden cards are always preserved.
+- **Permanent Until Reset**: Edits survive page refreshes, browser restarts, and computer reboots. They are only removed when you click `↩ Reset`.
+
+### 7. Dual-Language & Separate Copy Buttons
+- **Bilingual Support**: Many templates contain both Vietnamese and English, separated by `===`. Special `🇻🇳 VN` and `🇬🇧 EN` buttons appear on these cards to copy just one language block.
 - **Copy Email** — Copies the customer-facing response. Disabled automatically for `[Internal Note Only]` cards.
 - **Copy Note** — Copies the internal note for pasting into GSP, team chats, or case logs.
 
 ---
 
-## 🖊️ Edit, Save & Reset Templates
+## 🖊️ Add, Edit, Save & Reset Templates
 
 This is the most powerful feature of the Case Library. You are not locked into the default templates — you can **permanently customize them** to match your team's exact language, tone, and workflow.
 
-### ✏️ Edit Templates
+### ✏️ Edit Card Templates
 
 Click the **✏️ Edit Templates** button in the top-right toolbar to enter Edit Mode.
 
-- Every **Customer Email** body and **Internal Note** across all visible cards becomes fully editable.
+- Every card element—ID, Category, Title, Email Body, and Note—becomes editable.
 - The button turns red and changes to **🚫 Stop Editing** to clearly signal you are in edit mode.
-- The **💾 Save Templates** and **↩ Reset** buttons appear automatically alongside it.
+- The `💾 Save Templates` and `↩ Reset` buttons appear automatically alongside it.
 - Make any changes you need — reword sentences, update contact details, add your team's signature, remove sections that don't apply.
 - Click **🚫 Stop Editing** again to exit edit mode without saving.
 
@@ -108,6 +114,21 @@ Click the **✏️ Edit Templates** button in the top-right toolbar to enter Edi
 
 > **Tip:** You can still use the search bar and category sidebar while in edit mode to navigate to the template you want to change.
 
+### 🏷️ Edit Category Titles
+
+Click the **🏷️ Edit Category Titles** button to enter a focused edit mode for the sidebar.
+
+- All category names in the sidebar get a dashed outline, indicating they are clickable and editable.
+- The logic is improved so that clicking to edit a category label won't accidentally trigger a page filter.
+
+### ➕ Add Template
+
+Click the green **➕ Add Template** button in the header to create a new template.
+
+- A new, blank card is created at the bottom of your currently selected category.
+- The page automatically scrolls to the new card, highlights it, and enters Edit Mode so you can start typing immediately.
+- Fill in the ID, Category, Title, and Body, then click **💾 Save Templates** to make it permanent.
+
 ---
 
 ### 💾 Save Templates
@@ -115,18 +136,21 @@ Click the **✏️ Edit Templates** button in the top-right toolbar to enter Edi
 Click **💾 Save Templates** to permanently save all your edits for the current library.
 
 - Edits are saved to your browser's **`localStorage`** — they survive page refreshes, browser restarts, and computer reboots.
-- Saves are **per library** — edits to `The Scenarios` do not affect `Pop cases` or `Special Cases`.
+- Saves are **per library** — edits to `The Scenarios` do not affect `Pop cases`.
+- **Smart Saving**: The system now uses an object-based structure, preventing data loss for non-visible (filtered) templates when you save.
 - A **✅ Saved!** confirmation flashes on the button so you know it worked.
 - The next time you open the page, your saved versions load automatically — the defaults are replaced with your customized text.
 
-**What gets saved:**
+### What's Editable & Saved
 
-| Content | Saved? |
-|---|---|
-| Customer Email body | ✅ Yes |
-| Internal Note text | ✅ Yes |
-| Card title / ID | ✅ Used as identifier |
-| Library selection | ✅ Per library |
+| Element | What it is | Editable in edit mode | Saved/Restored |
+|---|---|:---:|:---:|
+| `.card-tag` | Card ID badge | ✅ | ✅ per index |
+| `.card-category` | Category badge on card | ✅ | ✅ per index |
+| `.card-title` | Card heading | ✅ | ✅ per index |
+| `.email-body` | Email body text | ✅ | ✅ per index |
+| `.card-note` | Internal note | ✅ | ✅ per index |
+| `.nav-label` | Sidebar category names | ✅ | ✅ per category key |
 
 > **Storage:** `localStorage` is browser-local. Edits are saved on your machine only and are not shared with other users or devices.
 
@@ -144,7 +168,7 @@ Click **↩ Reset** to discard all saved edits for the current library and resto
 
 ---
 
-### Edit / Save / Reset — Full Workflow Example
+### Full Workflow Example
 
 ```
 1. Open the Case Library
@@ -170,10 +194,13 @@ Click **↩ Reset** to discard all saved edits for the current library and resto
 ![Dual-Language Template](images/caselibrary_dual.png)
 *A dual-language template providing both Vietnamese and English content in a single card.*
 
-### 3. Editable Templates
+### 3. Editable Card Templates
 ![Editable Templates](images/caselibrary_editableTemplates.png)
 *Edit Mode — click any card field to customize the template text permanently.*
 
+### 4. Editable Categories
+![Editable Categories](images/caselibrary_editableCategories.png)
+*Edit Mode for categories — sidebar labels, card categories, and titles become editable.*
 ---
 
 ## 📖 How to Use — Step by Step
