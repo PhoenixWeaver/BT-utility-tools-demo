@@ -68,6 +68,7 @@ git push origin main
 
 <!-- git remote set-url origin https://github.com/BenBinhTran/BenBinhTran.github.io.git -->
 
+git remote add origin https://github.com/PhoenixWeaver/BT-utility-tools-demo.git 
 git remote set-url origin https://github.com/PhoenixWeaver/BT-utility-tools-demo.git 
 # 2. Check the status of your files to see what has changed
 git status
