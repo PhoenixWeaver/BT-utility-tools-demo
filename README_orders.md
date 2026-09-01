@@ -1,6 +1,6 @@
 # Order Automation System
 
-A web-based order automation system for FedEx supply management, built as a module inside PhoenixFlix. It handles customer supply order processing with intelligent allocation algorithms and duplicate prevention.
+A web-based order automation system for PhoenixExp supply management, built as a module inside PhoenixFlix. It handles customer supply order processing with intelligent allocation algorithms and duplicate prevention.
 
 ## 🚀 Features
 
@@ -54,23 +54,23 @@ A web-based order automation system for FedEx supply management, built as a modu
 
 ## 📋 API Endpoints
 
-All routes are registered under the `/FedEx/` namespace in `main.go`.
+All routes are registered under the `/PhoenixExp/` namespace in `main.go`.
 
 ### Order Management
-- `POST /FedEx/orders` — Submit new order (regular, modified, or VIP)
-- `GET /FedEx/orders/{accountNo}` — Retrieve order history by account
-- `GET /FedEx/orders` — Get all orders (admin dump, no auth in demo)
-- `GET /FedEx/order/{orderId}` — Get specific order details
-- `PUT /FedEx/order/{orderId}/tracking` — Add or update tracking number
+- `POST /PhoenixExp/orders` — Submit new order (regular, modified, or VIP)
+- `GET /PhoenixExp/orders/{accountNo}` — Retrieve order history by account
+- `GET /PhoenixExp/orders` — Get all orders (admin dump, no auth in demo)
+- `GET /PhoenixExp/order/{orderId}` — Get specific order details
+- `PUT /PhoenixExp/order/{orderId}/tracking` — Add or update tracking number
 
 ### Request/Response Examples
 
 #### Submit Regular Order
 ```json
-POST /FedEx/orders
+POST /PhoenixExp/orders
 {
   "items": [
-    { "itemName": "FedEx Envelope", "requestedQty": 5, "qtyLimit": 30 }
+    { "itemName": "PhoenixExp Envelope", "requestedQty": 5, "qtyLimit": 30 }
   ],
   "customer": {
     "accountno": "698583622",
@@ -82,7 +82,7 @@ POST /FedEx/orders
 
 #### Submit VIP Order
 ```json
-POST /FedEx/orders
+POST /PhoenixExp/orders
 {
   "items": [...],
   "customer": { "accountno": "698583622" },
@@ -93,7 +93,7 @@ POST /FedEx/orders
 
 #### Submit Modified Order
 ```json
-POST /FedEx/orders
+POST /PhoenixExp/orders
 {
   "items": [...],
   "customer": { "accountno": "698583622" },
@@ -108,14 +108,14 @@ POST /FedEx/orders
   "orderId": "ORD-1640995200000",
   "customer": { "accountno": "698583622", "company": "Example Company" },
   "requestedItems": [
-    { "itemName": "FedEx Envelope", "requestedQty": 5, "qtyLimit": 30 }
+    { "itemName": "PhoenixExp Envelope", "requestedQty": 5, "qtyLimit": 30 }
   ],
   "approvedItems": [
-    { "itemName": "FedEx Envelope", "requestedQty": 5, "qtyLimit": 30, "approvedQty": 5, "category": "envelope" }
+    { "itemName": "PhoenixExp Envelope", "requestedQty": 5, "qtyLimit": 30, "approvedQty": 5, "category": "envelope" }
   ],
   "status": "pending",
   "createdAt": "2025-01-01T14:10:06Z",
-  "summary": "Order ORD-1640995200000 is on the way with:\n5 x FedEx Envelope"
+  "summary": "Order ORD-1640995200000 is on the way with:\n5 x PhoenixExp Envelope"
 }
 ```
 
@@ -145,8 +145,8 @@ go run .
 ### 1. Order Input
 Paste structured order text in the textarea (tab-separated or space-separated):
 ```
-FedEx Envelope (Qty. limit 30)	5
-FedEx Small Box (Qty. limit 10)	3
+PhoenixExp Envelope (Qty. limit 30)	5
+PhoenixExp Small Box (Qty. limit 10)	3
 accountno	698583622
 company	Example Company
 alt-address1	123 Main St
@@ -193,20 +193,20 @@ Strips `(Box A/B/C/D/E) Box` suffixes before matching against `CATEGORY` map ent
 ## 📊 Order Categories
 
 ### Envelopes (Limit: 10 total)
-- FedEx Envelope
+- PhoenixExp Envelope
 
 ### Paks (Limit: 30 total)
-- FedEx Reusable Padded Pak
-- FedEx Reusable Large Pak
-- FedEx Reusable Extra Large Pak
+- PhoenixExp Reusable Padded Pak
+- PhoenixExp Reusable Large Pak
+- PhoenixExp Reusable Extra Large Pak
 
 ### Boxes (Limit: 10 total)
-- FedEx Small Box, Medium Box, Large Box
-- FedEx 10kg Box, 25kg Box
-- FedEx Large/Small/Medium/Jumbo/Extra Large Brown Box
+- PhoenixExp Small Box, Medium Box, Large Box
+- PhoenixExp 10kg Box, 25kg Box
+- PhoenixExp Large/Small/Medium/Jumbo/Extra Large Brown Box
 
 ### Special Items (Item-Specific Limits, No Category Cap)
-- FedEx International Pouches (Limit: 50)
+- PhoenixExp International Pouches (Limit: 50)
 - Thermal Label 154250 (Limit: 2)
 - Thermal Label 156148 (Limit: 2)
 
