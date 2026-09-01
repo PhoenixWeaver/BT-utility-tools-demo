@@ -1,6 +1,6 @@
 # Order Automation System
 
-A comprehensive web-based order automation system for FedEx supply management, designed to streamline customer supply order processing with intelligent allocation algorithms and duplicate prevention.
+A comprehensive web-based order automation system for PhoenixExp supply management, designed to streamline customer supply order processing with intelligent allocation algorithms and duplicate prevention.
 
 ## 🚀 Features
 
@@ -67,7 +67,7 @@ POST /orders
 {
   "items": [
     {
-      "itemName": "FedEx Envelope",
+      "itemName": "PhoenixExp Envelope",
       "requestedQty": 5,
       "qtyLimit": 30
     }
@@ -87,14 +87,14 @@ POST /orders
   "customer": { ... },
   "approvedItems": [
     {
-      "itemName": "FedEx Envelope",
+      "itemName": "PhoenixExp Envelope",
       "requestedQty": 5,
       "approvedQty": 5,
       "category": "envelope"
     }
   ],
   "status": "pending",
-  "summary": "Order ORD-1640995200000 is on the way with:\n5 x FedEx Envelope"
+  "summary": "Order ORD-1640995200000 is on the way with:\n5 x PhoenixExp Envelope"
 }
 ```
 
@@ -131,8 +131,8 @@ nodemon server.js
 ### 1. Order Input
 Paste structured order text in the textarea, following this format:
 ```
-FedEx Envelope (Qty. limit 30)	5
-FedEx Small Box (Qty. limit 20)	3
+PhoenixExp Envelope (Qty. limit 30)	5
+PhoenixExp Small Box (Qty. limit 20)	3
 accountno	698583622
 firstname	John
 lastname	Doe
@@ -186,31 +186,31 @@ Enter an account number and click "Fetch History" to view:
 ## 📊 Order Categories
 
 ### Envelopes (Limit: 10 total)
-- FedEx Envelope
+- PhoenixExp Envelope
 
 ### Paks (Limit: 30 total)
-- FedEx Reusable Padded Pak
-- FedEx Reusable Large Pak
-- FedEx Reusable Extra Large Pak
+- PhoenixExp Reusable Padded Pak
+- PhoenixExp Reusable Large Pak
+- PhoenixExp Reusable Extra Large Pak
 
 ### Boxes (Limit: 10 total)
-- FedEx Small Box
-- FedEx Medium Box
-- FedEx Large Box
-- FedEx 10kg Box
+- PhoenixExp Small Box
+- PhoenixExp Medium Box
+- PhoenixExp Large Box
+- PhoenixExp 10kg Box
 
 ## 👤 User Info
 
 Source available on GitHub: https://github.com/PhoenixWeaver
-- FedEx 25kg Box
-- FedEx Large Brown Box
-- FedEx Small Brown Box
-- FedEx Medium Brown Box
-- FedEx Jumbo Brown Box
-- FedEx Extra Large Brown Box
+- PhoenixExp 25kg Box
+- PhoenixExp Large Brown Box
+- PhoenixExp Small Brown Box
+- PhoenixExp Medium Brown Box
+- PhoenixExp Jumbo Brown Box
+- PhoenixExp Extra Large Brown Box
 
 ### Special Items
-- FedEx International Pouches (Limit: 50)
+- PhoenixExp International Pouches (Limit: 50)
 - Thermal Label 154250 (Limit: 2)
 - Thermal Label 156148 (Limit: 2)
 
