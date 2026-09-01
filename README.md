@@ -245,16 +245,38 @@ CMD ["npm", "start"]
 4. Add tests if applicable
 5. Submit a pull request
 
+## 👤 Author
+
+© 2025 ThePhoenixFlix - Ben Tran
+- GitHub: https://github.com/ThePhoenixFlix
+- Email: ThePhoenixFlix@gmail.com
+- Website: https://bit.ly/ThePhoenixFlix
+
+## 🚀 Deployment
+
+Deployed as part of the PhoenixFlix backend on Render. The frontend static files are served by the same Go server.
+
+```dockerfile
+FROM golang:1.25-alpine AS builder
+WORKDIR /app
+COPY . .
+RUN go build -o main .
+
+FROM alpine:latest
+RUN apk --no-cache add ca-certificates
+WORKDIR /root/
+COPY --from=builder /app/main .
+CMD ["./main"]
+```
+
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-For questions or support, please contact the development team or create an issue in the repository.
+This project is licensed under the BSD 3-Clause License.
 
 ---
 
-*Built with Node.js, Express.js, and vanilla JavaScript for reliable supply chain automation.*
+*Built with Go, vanilla JavaScript, and in-memory storage for reliable supply order automation.*
+
+---
 
 # BT-utility-tools-demo
