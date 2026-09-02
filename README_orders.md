@@ -28,15 +28,52 @@ A web-based order automation system for PhoenixExp supply management, built as a
 
 ## 📸 Screenshots
 
+The screenshots below follow the main order workflow from request parsing through submission, lookup, email preparation, and account history.
+
 ### Main Application Interface
 ![Order Automation GUI](./images/orders_GUI.png)
 
-*Main dashboard showing order input, parsing controls, and submission interface*
+*Main dashboard showing order input, parsing controls, and submission interface.*
 
-### Order Processing Output
-![Regular Order Output](./images/orders_RegOutput.png)
+### Order Request Form
+![Order request form](./images/orders_request.png)
 
-*Example of parsed order output with approval details and allocation breakdown*
+*Sample order text loaded in the Request form before parsing.*
+
+### Parsed Regular Order
+![Regular order output](./images/orders_RegOutput.png)
+
+*Parsed customer account and requested items, followed by the regular allocation receipt.*
+
+### Modify an Order
+![Modify order form](./images/orders_modify.png)
+
+*Check and Modify mode with editable quantities, customer fields, and the required reason.*
+
+### Modified Order Receipt
+![Modified order receipt](./images/orders_receipt.png)
+
+*Receipt generated after submitting a modified order.*
+
+### VIP Submission
+![VIP order submission](./images/orders_VIP.png)
+
+*VIP panel with approval, justification, and the full-quantity receipt.*
+
+### Order Lookup
+![Order lookup](./images/orders_lookup.png)
+
+*Lookup by order ID with optional tracking-number editing.*
+
+### Email Order Receipt
+![Email order receipt](./images/orders_emailReceipt.png)
+
+*Email composer populated from the fetched order, including the recipient and plain-text receipt.*
+
+### Account Order History
+![Account order history](./images/orders_accountHistory.png)
+
+*Account history showing receipt cards for orders associated with an account.*
 
 ## 🔧 Technical Architecture
 
@@ -105,19 +142,39 @@ POST /PhoenixExp/orders
 #### Order Response
 ```json
 {
-  "orderId": "ORD-1640995200000",
-  "customer": { "accountno": "698583622", "company": "Example Company" },
+  "orderId": "ORD-1710000000000",
+  "customer": { "accountno": "123456789", "company": "Example Company" },
   "requestedItems": [
     { "itemName": "PhoenixExp Envelope", "requestedQty": 5, "qtyLimit": 30 }
   ],
   "approvedItems": [
-    { "itemName": "PhoenixExp Envelope", "requestedQty": 5, "qtyLimit": 30, "approvedQty": 5, "category": "envelope" }
+    {
+      "itemName": "PhoenixExp Envelope",
+      "requestedQty": 5,
+      "qtyLimit": 30,
+      "itemSpecificLimit": 999999,
+      "approvedQty": 5,
+      "category": "envelope"
+    }
   ],
   "status": "pending",
-  "createdAt": "2025-01-01T14:10:06Z",
-  "summary": "Order ORD-1640995200000 is on the way with:\n5 x PhoenixExp Envelope"
+  "createdAt": "2026-09-01T14:10:06Z",
+  "summary": "Order ORD-1710000000000 is on the way with:\n5 x PhoenixExp Envelope",
+  "trackingNumber": "",
+  "isVip": false,
+  "vipReason": "",
+  "modifyReason": ""
 }
 ```
+
+The response can also include these workflow fields:
+
+- `trackingNumber`: Empty until tracking is saved; a non-empty value makes the browser display the order as **Shipped**.
+- `isVip`: `true` for an approved VIP submission; VIP responses also include `vipReason`.
+- `vipReason`: The required justification supplied with a VIP submission.
+- `modifyReason`: The required justification supplied with a modified submission.
+
+These fields use `omitempty` in the Go model, so empty optional values may be omitted from the serialized response. `itemSpecificLimit` is included on approved items when the backend applies an item-specific limit.
 
 #### Duplicate Response (409 Conflict)
 ```json
@@ -162,6 +219,20 @@ Click **Request** to parse and preview. The system extracts customer fields and 
 
 ### 4. View History
 Enter an account number and click **Fetch History** to view all orders for that account.
+
+### 5. Manual Test Checklist
+- Paste the sample and click **Request**; confirm the account and every item appear.
+- Change the account, submit a regular order, and save the returned order ID.
+- Submit the same regular payload again; confirm the duplicate response is readable.
+- Enable **Check and Modify**, change a quantity or address, leave the reason empty, and confirm submission is blocked in the browser.
+- Enter a reason and submit the modified order; confirm its receipt contains `modifyReason`.
+- Try VIP without approval, then without a reason, then with both; confirm only the last attempt is sent.
+- Fetch an order with `ORD-...` and with only the numeric suffix; both should work.
+- Enable tracking editing, save a tracking number, and confirm every visible copy changes to **Shipped**.
+- Fetch account history and confirm multiple receipt cards render.
+- Fetch an order containing `emailaddress`; confirm the email recipient and plain-text body are populated.
+- Restart the Go server and confirm the in-memory limitation is understood: previous demo orders are gone.
+- **Cold starts.** The production API may take a moment to wake up; keep the spinner and disable the active submit button while awaiting the response.
 
 ## 🔍 Key Functions
 
