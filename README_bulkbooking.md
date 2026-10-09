@@ -93,8 +93,8 @@ Builds a concise pickup note for the driver, assembled from parsed eOPS/CED data
 ![Note to Driver Input](images/note2driver_input.png)
 *Input panel — CED and eOPS text areas with Note to Driver info fields.*
 
-![Note to Driver Output](images/note2driver_output.png)
-*Generated booking table and Note to Driver output.*
+<!-- ![Note to Driver Output](images/note2driver_output.png)
+*Generated booking table and Note to Driver output.* -->
 
 ![Note to Driver](images/note2driver.png)
 *Formatted pickup note ready to copy.*
@@ -236,6 +236,40 @@ The full end-to-end workflow for a single shipment:
 ```
 
 All three outputs can be copied independently and pasted into Outlook.
+
+---
+
+## Student Rebuild Overview
+
+### 1. What the page does
+
+The page accepts two pasted text documents—CED and eOPS—then turns selected details into three practical outputs:
+
+1. A booking request for the RAMP team, with shipment checks and an editable table.
+2. A note to the driver, with contact, weight, dimensions, pallet count, and AWB/reference numbers.
+3. A bulk-shipment approval email for the VN Credit team.
+
+```text
+CED text ───────┐
+                ├─ parse + normalize ─ validate ─ render editable output ─ copy
+ eOPS text ─────┘                            ├─ booking / RAMP
+                                             ├─ note / driver
+                                             └─ bulk request / Credit
+```
+
+Everything runs in the browser. There is no API request or database in this workflow; the pasted shipment text stays in the page unless a user copies an output.
+
+### 2. Start with requirements, not markup
+
+Before writing HTML, list the input, transformation, and output for each feature. This keeps business rules from getting tangled with presentation.
+
+| Feature | Main inputs | Main result |
+|---|---|---|
+| Booking | CED, eOPS, configurable limits | Booking table, subject, space-booking reasons |
+| Driver note | CED, eOPS, count, pallets, contact, ready time, references | Compact plain-text pickup note |
+| Bulk request | shipment details, weight, whitelist confirmation | Credit-team email and field table |
+
+Write down which source document owns each value. In this page, eOPS supplies fields such as ship date, AWB, service type, shipper, package count, and shipment weight. CED supplies fields such as dimensions, piece count, and length-and-girth information. Bulk-request fields can also be reviewed and edited by the user.
 
 ---
 
