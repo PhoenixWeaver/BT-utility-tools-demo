@@ -12,14 +12,17 @@ VirtualCV hosts candidate CVs as static pages on GitHub Pages. Candidates can bu
 
 The builder is maintained separately from this repository. Drafts are saved locally in the candidate’s browser and are not uploaded automatically.
 
-<!-- ### VirtualCV preview
-![Preview of the Virtual CV page](images/virtualCV.jpg) -->
+### Hosted CV on mobile
+
+[View the John Doe sample CV](https://virtualcv.github.io/JohnDoe/).
+
+![John Doe sample CV displayed in a mobile browser](images/VirtualCV_mobile.jpg)
 
 ### CV builder preview
 
 [Open the CV builder](https://phoenixflix.vercel.app/CVbuilder).
 
-![Preview of the CV builder, including photo upload, HTML download, and print controls](images/VirtualCV.jpg)
+![Preview of the CV builder, including photo upload, HTML download, and print controls](images/CVbuilder.jpg)
 
 ### Example hosted CV
 
@@ -43,6 +46,8 @@ Root-level CV files and profile folders are separate pages. Update the intended 
 ├── index.html
 ├── favicon.svg
 ├── images/
+│   ├── VirtualCV.jpg
+│   ├── VirtualCV_mobile.jpg
 │   ├── CVbuilder.jpg
 │   └── onlineCV.jpg
 ├── BenTran/
