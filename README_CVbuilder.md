@@ -16,7 +16,8 @@ The builder is maintained separately from this repository. Drafts are saved loca
 
 [View the John Doe sample CV](https://virtualcv.github.io/JohnDoe/).
 
-![John Doe sample CV displayed in a mobile browser](images/VirtualCV_mobile.jpg)
+<!-- ![John Doe sample CV displayed in a mobile browser](images/VirtualCV_mobile.jpg) -->
+<img src="images/VirtualCV_mobile.jpg" alt="John Doe sample CV displayed in a mobile browser" width="300">
 
 ### CV builder preview
 
