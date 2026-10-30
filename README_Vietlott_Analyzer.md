@@ -2,7 +2,7 @@
 
 A browser-based case study that compares Vietlott jackpot values with jackpot odds and generates number suggestions for Lotto 5/35, Mega 6/45, and Power 6/55.
 
-![Vietlott Analysis](public/images/VietlottAnalysis.png)
+![Vietlott Analysis](images/VietlottAnalysis.png)
 
 ## Why I built it — and my view on the lottery
 
@@ -49,7 +49,7 @@ In AI image mode, a vision-capable AI reads the screenshot and may suggest histo
 
 AI suggestions are not sourced from a verified, complete draw-history database. Historical frequencies do not predict future results: lottery draws are independent, and this weighting does not improve the official odds of winning.
 
-![AI-weighted probability theory](public/images/AI_weighted_Probability_Theory.png)
+![AI-weighted probability theory](images/AI_weighted_Probability_Theory.png)
 
 ## Interface
 
