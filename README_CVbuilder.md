@@ -1,23 +1,46 @@
 # VirtualCV
 
-VirtualCV hosts candidate CVs as static pages on GitHub Pages. Candidates can build and download a CV first, then request that it be published here as a personalized online page.
+VirtualCV hosts candidate CVs as static pages on GitHub Pages. Candidates can build and download a CV first, then request that it be published as a personalized online page.
 
 ## Create and host a CV
 
-1. Open the [PhoenixFlix CV builder](https://phoenixflix.vercel.app/CVbuilder).
-2. Click the sample text to edit it, add a profile photo, and review the completed CV.
+1. Open the [CV builder](./CVbuilder/) or the [hosted builder](https://phoenixflix.vercel.app/CVbuilder).
+2. Choose a template, edit the sample text, add a profile photo, and review the completed CV.
 3. Download a standalone HTML copy or print and save the CV as a PDF.
-4. To request online hosting, email the standalone HTML file to [The VirtualCV team](mailto:ThePhoenixFlix@gmail.com?subject=VirtualCV%20online%20hosting%20request).
+4. To request online hosting, email the standalone HTML file to [the VirtualCV team](mailto:ThePhoenixFlix@gmail.com?subject=VirtualCV%20online%20hosting%20request).
 5. After the page is published, share its direct link with recruiters.
 
-The builder is maintained separately from this repository. Drafts are saved locally in the candidate’s browser and are not uploaded automatically.
+Drafts are saved locally in the candidate’s browser and are not uploaded automatically.
 
-### Hosted CV on mobile
+## Sample CVs
 
-[View the John Doe sample CV](https://virtualcv.github.io/JohnDoe/).
+The repository includes fictional sample profiles to demonstrate published CV pages:
 
-<!-- ![John Doe sample CV displayed in a mobile browser](images/VirtualCV_mobile.jpg) -->
-<img src="images/VirtualCV_mobile.jpg" alt="John Doe sample CV displayed in a mobile browser" width="300">
+- [John Doe sample CV](https://virtualcv.github.io/JohnDoe/)
+- [Your Name sample CV](https://virtualcv.github.io/YourName/)
+
+These are examples, not real candidate profiles.
+
+### Sample CV on mobile
+
+<img src="images/VirtualCV_mobile.jpg" alt="Fictional John Doe sample CV displayed in a mobile browser" width="300">
+
+### Example hosted CV
+
+[View the John Doe sample CV online](https://virtualcv.github.io/JohnDoe/).
+
+![Preview of a fictional sample CV hosted on VirtualCV](images/onlineCV.jpg)
+
+## CV templates
+
+The builder includes two editable layouts:
+
+- **Classic** — a traditional résumé with a dark sidebar for contact details, education, and skills.
+- **Modern** — a clean, compact layout with a flexible experience column and a concise contact header.
+
+Both templates support editing, photo upload, locally saved drafts, standalone HTML downloads, and printing to PDF.
+
+![CV builder showing its classic and modern template options](images/CVbuilder_templates.jpg)
 
 ### CV builder preview
 
@@ -25,20 +48,11 @@ The builder is maintained separately from this repository. Drafts are saved loca
 
 ![Preview of the CV builder, including photo upload, HTML download, and print controls](images/CVbuilder.jpg)
 
-### Example hosted CV
-
-[View the sample CV online](https://virtualcv.github.io/JohnDoe/).
-
-![Preview of a sample CV hosted on VirtualCV](images/onlineCV.jpg)
-
-## Published pages
+## Published sample pages
 
 - [VirtualCV landing page](./index.html)
-- [Ben Tran interactive portfolio](./BenTran/)
-- [Ben Tran CV](./BenTran.html)
-- [John Doe sample CV](./JohnDoe/)
-
-Root-level CV files and profile folders are separate pages. Update the intended page and its associated assets when editing a profile.
+- [John Doe fictional sample](./JohnDoe/)
+- [Your Name fictional sample](./YourName/)
 
 ## Repository layout
 
@@ -47,21 +61,24 @@ Root-level CV files and profile folders are separate pages. Update the intended 
 ├── index.html
 ├── favicon.svg
 ├── images/
-│   ├── VirtualCV.jpg
-│   ├── VirtualCV_mobile.jpg
 │   ├── CVbuilder.jpg
+│   ├── CVbuilder_templates.jpg
+│   ├── VirtualCV_mobile.jpg
 │   └── onlineCV.jpg
-├── BenTran/
+├── CVbuilder/
 │   ├── index.html
-│   ├── Certificates/
-│   ├── Resumes/
-│   └── images/
+│   ├── modern.html
+│   └── README_CVbuilder.md
 ├── JohnDoe/
 │   ├── index.html
 │   └── images/
-└── Save/
+└── YourName/
+    ├── index.html
+    └── images/
 ```
+
+Only fictional sample profiles are listed here; real-person CV pages and profile folders are omitted for privacy.
 
 ## Preview locally
 
-Open `index.html` in a browser or run a static web server from the repository root. The CV builder link opens the separately hosted PhoenixFlix tool.
+Open `CVbuilder/index.html` for the classic template or `CVbuilder/modern.html` for the modern template. You can also run a static web server from the repository root.
