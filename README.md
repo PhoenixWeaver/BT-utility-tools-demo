@@ -2,7 +2,9 @@
 
 A comprehensive web-based order automation system for PhoenixExp supply management, designed to streamline customer supply order processing with intelligent allocation algorithms and duplicate prevention.
 
->>>  << For more details, please check README files >>
+https://PhoenixFlix.vercel.app/orders.html
+
+>>>  << For more details on other tools and projects, please check README files >>
 
 ## 🚀 Features
 
