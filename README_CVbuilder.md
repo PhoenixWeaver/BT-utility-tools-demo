@@ -40,7 +40,7 @@ The builder includes two editable layouts:
 
 Both templates support editing, photo upload, locally saved drafts, standalone HTML downloads, and printing to PDF.
 
-![CV builder showing its classic and modern template options](images/CVbuilder_templates.jpg)
+![CV builder showing its classic and technical template options](images/CVbuilder_templates.jpg)
 
 ### CV builder preview
 
@@ -61,7 +61,7 @@ Both templates support editing, photo upload, locally saved drafts, standalone H
 │   └── onlineCV.jpg
 ├── CVbuilder/
 │   ├── index.html
-│   ├── modern.html
+│   ├── technical.html
 │   └── README_CVbuilder.md
 ├── JohnDoe/
 │   ├── index.html
@@ -75,13 +75,13 @@ Only fictional sample profiles are listed here; real-person CV pages and profile
 
 ## Preview locally
 
-Open `CVbuilder/index.html` for the classic template or `CVbuilder/modern.html` for the modern template. You can also run a static web server from the repository root.
+Open `CVbuilder/index.html` for the classic template or `CVbuilder/technical.html` for the technical template. You can also run a static web server from the repository root.
 
 ## Published sample pages
 
 - [VirtualCV landing page](https://virtualcv.github.io/)
 - [Classic VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/index.html)
-- [Moderm VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/modern.html)
+- [Moderm VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/technical.html)
 
 - [John Doe fictional sample](https://virtualcv.github.io/JohnDoe/)
 - [Your Name fictional sample](https://virtualcv.github.io/YourName/)
