@@ -9,6 +9,7 @@
 ## Executive Summary
 
 The **Contoso Coffee AI Customer Support Agent** was developed using Microsoft Copilot Studio as part of Microsoft's AI Agent and Copilot Studio training programme.
+The project notes refer to it as **AI Contoso Agent Helper**; the Copilot Studio overview screenshot shows **BenTran Contoso Agent V2**.
 
 The solution enables customers and support teams to interact with an intelligent conversational agent capable of:
 
@@ -57,6 +58,16 @@ The agent understands natural language and can engage in multi-turn conversation
 - "Can I cancel my order?"
 - "What is your return policy?"
 
+### Agent Routing and Conversation Design
+
+The root Contoso Support Agent identifies the caller's intent, confirms its understanding, and routes requests to the appropriate specialist:
+
+- **Machine Orders & Availability:** gather the caller's name, preferred machine model, and any existing order number before routing.
+- **Product Information & Support:** confirm the product or model and whether the question concerns features, maintenance, or warranty.
+- If the request is unclear, ask a clarifying question and keep the conversation with the root agent.
+
+The configured voice guidance uses short, natural turns, asks one question at a time, and spells back critical details such as names, phone numbers, and order numbers.
+
 ---
 
 ## Knowledge-Grounded Responses
@@ -80,6 +91,8 @@ The solution can:
 
 - Retrieve order information
 - Check order status
+- Process order-cancellation requests through the BT Order Cancellation Flow
+- Use the Customer Issue Prompt for machine-related issues
 - Provide customer-specific responses
 - Generate personalised communications
 - Assist support workflows
@@ -95,11 +108,13 @@ Using autonomous triggers and Power Automate, it can:
 - Monitor incoming emails
 - Detect order enquiries
 - Extract order identifiers
-- Retrieve relevant information
+- Retrieve the matching Machine Orders record from Dataverse, including status and available details such as requested-by, price, and created date
 - Generate customer responses
-- Automatically send email replies
+- Reply to the original email with a personalised response
 
 This demonstrates an event-driven AI architecture where the agent proactively performs work without waiting for a user conversation.
+
+For the order-status email workflow, the reply is addressed to the original sender or the message's Reply-To address, uses the subject **Order response**, and includes available order details. The workflow should stop rather than send if the original message ID or recipient is missing.
 
 ---
 
@@ -151,13 +166,13 @@ Customer Receives Response
 
 ## Figure 1 – Agent Configuration
 
-**File:** `images/Figure01_AgentConfiguration.png`
+**File:** `images/AI_Auto_CS_Agent_Overview.png`
 
-![Agent Configuration](images/Figure01_AgentConfiguration.png)
+![Agent Configuration](images/AI_Auto_CS_Agent_Overview.png)
 
 ### Description
 
-The agent was configured in Microsoft Copilot Studio using custom instructions, conversational guidance, and business support policies.
+The **BenTran Contoso Agent V2** overview shows the agent configured in Microsoft Copilot Studio using custom instructions, conversational guidance, and business support policies.
 
 Key configuration areas include:
 
@@ -174,9 +189,9 @@ This configuration ensures that customer interactions remain professional, accur
 
 ## Figure 2 – Customer Request Processing
 
-**File:** `images/Figure02_CustomerRequestProcessing.png`
+**File:** `images/AI_Auto_CS_Agent_OrderStatusResponse.png`
 
-![Customer Request Processing](images/Figure02_CustomerRequestProcessing.png)
+![Customer Request Processing](images/AI_Auto_CS_Agent_OrderStatusResponse.png)
 
 ### Description
 
@@ -208,9 +223,9 @@ The agent returns:
 
 ## Figure 3 – Automated Email Response
 
-**File:** `images/Figure03_AutomaticEmailResponse.png`
+**File:** `images/AI_Auto_CS_Agent_AutomatedEmailReply.png`
 
-![Automated Email Response](images/Figure03_AutomaticEmailResponse.png)
+![Automated Email Response](images/AI_Auto_CS_Agent_AutomatedEmailReply.png)
 
 ### Description
 
@@ -346,9 +361,9 @@ AI-Contoso-Agent-Helper/
 ├── README.md
 │
 ├── images/
-│   ├── Figure01_AgentConfiguration.png
-│   ├── Figure02_CustomerRequestProcessing.png
-│   └── Figure03_AutomaticEmailResponse.png
+│   ├── AI_Auto_CS_Agent_Overview.png
+│   ├── AI_Auto_CS_Agent_OrderStatusResponse.png
+│   └── AI_Auto_CS_Agent_AutomatedEmailReply.png
 │
 └── docs/
     ├── Architecture.md
