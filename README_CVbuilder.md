@@ -50,9 +50,12 @@ Both templates support editing, photo upload, locally saved drafts, standalone H
 
 ## Published sample pages
 
-- [VirtualCV landing page](./index.html)
-- [John Doe fictional sample](./JohnDoe/)
-- [Your Name fictional sample](./YourName/)
+- [VirtualCV landing page](https://virtualcv.github.io/)
+- [Classic VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/index.html)
+- [Moderm VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/modern.html)
+
+- [John Doe fictional sample](https://virtualcv.github.io/JohnDoe/)
+- [Your Name fictional sample](https://virtualcv.github.io/YourName/)
 
 ## Repository layout
 
