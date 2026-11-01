@@ -81,7 +81,7 @@ Open `CVbuilder/index.html` for the classic template or `CVbuilder/technical.htm
 
 - [VirtualCV landing page](https://virtualcv.github.io/)
 - [Classic VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/index.html)
-- [Moderm VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/technical.html)
+- [Technical VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/technical.html)
 
 - [John Doe fictional sample](https://virtualcv.github.io/JohnDoe/)
 - [Your Name fictional sample](https://virtualcv.github.io/YourName/)
