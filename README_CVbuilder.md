@@ -48,15 +48,6 @@ Both templates support editing, photo upload, locally saved drafts, standalone H
 
 ![Preview of the CV builder, including photo upload, HTML download, and print controls](images/CVbuilder.jpg)
 
-## Published sample pages
-
-- [VirtualCV landing page](https://virtualcv.github.io/)
-- [Classic VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/index.html)
-- [Moderm VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/modern.html)
-
-- [John Doe fictional sample](https://virtualcv.github.io/JohnDoe/)
-- [Your Name fictional sample](https://virtualcv.github.io/YourName/)
-
 ## Repository layout
 
 ```text
@@ -85,3 +76,12 @@ Only fictional sample profiles are listed here; real-person CV pages and profile
 ## Preview locally
 
 Open `CVbuilder/index.html` for the classic template or `CVbuilder/modern.html` for the modern template. You can also run a static web server from the repository root.
+
+## Published sample pages
+
+- [VirtualCV landing page](https://virtualcv.github.io/)
+- [Classic VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/index.html)
+- [Moderm VirtualCV Builder](https://phoenixflix.vercel.app/CVbuilder/modern.html)
+
+- [John Doe fictional sample](https://virtualcv.github.io/JohnDoe/)
+- [Your Name fictional sample](https://virtualcv.github.io/YourName/)
