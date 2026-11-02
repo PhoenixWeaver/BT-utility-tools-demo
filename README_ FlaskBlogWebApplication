@@ -48,9 +48,9 @@ A modern, responsive Flask web application featuring a blog system with user aut
 
 | Feature | Screenshot | Description |
 |---------|------------|-------------|
-| **Blog Interface** | ![Flask Blog](../images/Flask_Blog.png) | Modern blog interface with post creation and management |
-| **Contact Form** | ![Flask Contact](../images/Flask_contact.png) | Professional contact form with validation |
-| **Secret Page** | ![Flask Secret](../images/Flask_secret.jpeg) | Demo secret page with user authentication |
+| **Blog Interface** | ![Flask Blog](images/Flask_Blog.png) | Modern blog interface with post creation and management |
+| **Contact Form** | ![Flask Contact](images/Flask_contact.png) | Professional contact form with validation |
+| **Secret Page** | ![Flask Secret](images/Flask_secret.jpeg) | Demo secret page with user authentication |
 
 ## 🚀 Quick Start
 
