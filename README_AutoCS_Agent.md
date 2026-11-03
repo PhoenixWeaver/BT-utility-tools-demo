@@ -1,4 +1,4 @@
-# Autonomous Customer Support Agent for Contoso Coffee
+# Autonomous Customer Support Agent for Contoso Ltd
 
 > An intelligent customer support solution built with Microsoft Copilot Studio, Power Automate, Outlook, and Generative AI.
 >
@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-The **Contoso Coffee AI Customer Support Agent** was developed using Microsoft Copilot Studio as part of Microsoft's AI Agent and Copilot Studio training programme.
+The **Contoso Coffee AI Customer Support Agent** was developed using Microsoft Copilot Studio as part of Microsoft's AI Agent and Copilot Studio programme.
 The project notes refer to it as **AI Contoso Agent Helper**; the Copilot Studio overview screenshot shows **BenTran Contoso Agent V2**.
 
 The solution enables customers and support teams to interact with an intelligent conversational agent capable of:
@@ -29,7 +29,7 @@ The project showcases modern AI agent capabilities by integrating conversational
 
 ## Business Scenario
 
-Contoso Coffee sells coffee machines and related products.
+Contoso Ltd sells coffee machines and related products.
 
 Customers frequently contact support teams to:
 
@@ -300,9 +300,9 @@ This project demonstrates:
 
 ---
 
-# Microsoft Learn Training
+# Microsoft Learn 
 
-This project was developed while completing Microsoft Learn training modules related to AI agents and Microsoft Copilot Studio.
+This project was developed while completing Microsoft Learn modules related to AI agents and Microsoft Copilot Studio.
 
 Completed modules include:
 
@@ -367,7 +367,7 @@ AI-Contoso-Agent-Helper/
 │
 └── docs/
     ├── Architecture.md
-    └── TrainingEvidence.md
+    └── TrainingPrompts.md
 ```
 
 ---
