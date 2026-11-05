@@ -302,7 +302,7 @@ This project demonstrates:
 
 # Microsoft Learn 
 
-This project was developed while completing Microsoft Learn Training modules related to AI agents and Microsoft Copilot Studio.
+This project was developed while completing Microsoft Learn modules related to AI agents and Microsoft Copilot Studio.
 
 Completed modules include:
 
