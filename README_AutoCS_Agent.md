@@ -302,18 +302,9 @@ This project demonstrates:
 
 # Microsoft Learn 
 
-This project was developed while completing Microsoft Learn modules related to AI agents and Microsoft Copilot Studio.
+This project was developed while completing Microsoft Learn Training modules related to AI agents and Microsoft Copilot Studio.
 
 Completed modules include:
-
-- Introduction to Developing AI Agents
-- Build Agents in Copilot Chat
-- Build Intelligent Agents in Microsoft Copilot Studio
-- Build a Conversational Agent in Copilot Studio
-- Use Tools in Copilot Studio
-- Make Your Agent Autonomous in Copilot Studio
-
-### Microsoft Learn Achievement Links
 
 - Introduction to Developing AI Agents
 - Build Agents in Copilot Chat
