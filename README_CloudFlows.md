@@ -81,7 +81,7 @@ Additional flow screenshots are available in [`images/`](images/).
 
 ## Repository contents
 
-- [`BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed.zip`](BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed.zip) — managed Power Platform solution package containing invoice-processing cloud flows.
+- [`BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed`](BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed.zip) — managed Power Platform solution package containing invoice-processing cloud flows.
 - [`images/`](images/) — workflow and Excel output screenshots.
 
 ## Import and demo setup
