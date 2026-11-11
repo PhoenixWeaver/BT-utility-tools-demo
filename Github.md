@@ -82,3 +82,22 @@ git commit -m "🛠 BenTran Utilities Tools"
 
 # 5. Push your committed changes to GitHub
 git push
+====
+
+==========================================
+git credential-manager github logout BenBinhTran
+git credential-manager github list 2>&1
+git push origin main
+
+git remote set-url origin https://github.com/PhoenixWeaver/BT-utility-tools-demo.git 
+
+git checkout -b feature/v2
+
+git checkout main
+git pull origin main
+git add .
+git commit -m "🏆 BenTran CloudFlows ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git push origin feature/v2
+git checkout main
+git pull origin main
+git merge feature/v2 --no-ff -m "✨🏆 BenTran CloudFlows ✨ $(date +%d%m%y) $(date +%H%M) ✨"
