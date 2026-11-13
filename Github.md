@@ -96,7 +96,7 @@ git checkout -b feature/v3
 git checkout main
 git pull origin main
 git add .
-git commit -m "🏆 BenTran CloudFlows ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git commit -m "🏆 BenTran Automate CloudFlows ✨ $(date +%d%m%y) $(date +%H%M) ✨"
 git push origin feature/v3
 git checkout main
 git pull origin main
