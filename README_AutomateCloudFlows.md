@@ -81,7 +81,7 @@ Additional flow screenshots are available in [`images/`](images/).
 
 ## Repository contents
 
-- [`BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed`](BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed.zip) — managed Power Platform solution package containing invoice-processing cloud flows.
+- [`BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed`](BTRANBYUNETCONTOSOProcessingInvoice_1_0_0_1_managed) — managed Power Platform solution package containing invoice-processing cloud flows.
 - [`images/`](images/) — workflow and Excel output screenshots.
 
 ## Import and demo setup
@@ -102,4 +102,4 @@ Exact setup depends on the target environment and solution version. Importing th
 - AI Builder extraction is model-dependent; validate extracted values against sample documents and handle low-confidence or incomplete results before operational use.
 - Connector references, mailbox addresses, reviewer identities, file paths, SharePoint lists, and Excel tables must be configured for the destination environment.
 - Desktop automation depends on the target machine and application UI, so it requires its own setup and testing.
-- This repository does not include production service-level, security, or financial-control guarantees. Do not use the demo to authorize or issue payments.
+- This repository does not include production service-level, security, or financial-control guarantees. Please not use the demo to authorize or issue payments.
