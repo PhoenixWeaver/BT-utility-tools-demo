@@ -84,7 +84,6 @@ git push
 
 ==========================================
 git credential-manager github logout BenBinhTran
-git credential-manager github logout PhoenixWeaver
 
 git credential-manager github list 2>&1
 git push origin main
