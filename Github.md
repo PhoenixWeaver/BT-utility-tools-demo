@@ -95,7 +95,7 @@ git checkout -b feature/v4
 git checkout main
 git pull origin main
 git add .
-git commit -m "🏆 BenTran CloudFlows ChordEditor ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git commit -m "🏆 BenTran Auto ChordEditor ✨ $(date +%d%m%y) $(date +%H%M) ✨"
 git push origin feature/v4
 git checkout main
 git pull origin main
