@@ -66,8 +66,6 @@ git credential-manager github logout PhoenixWeaver
 git credential-manager github list 2>&1
 git push origin main
 
-<!-- git remote set-url origin https://github.com/BenBinhTran/BenBinhTran.github.io.git -->
-
 git remote add origin https://github.com/PhoenixWeaver/BT-utility-tools-demo.git 
 git remote set-url origin https://github.com/PhoenixWeaver/BT-utility-tools-demo.git 
 # 2. Check the status of your files to see what has changed
@@ -86,18 +84,20 @@ git push
 
 ==========================================
 git credential-manager github logout BenBinhTran
+git credential-manager github logout PhoenixWeaver
+
 git credential-manager github list 2>&1
 git push origin main
 
 git remote set-url origin https://github.com/PhoenixWeaver/BT-utility-tools-demo.git 
 
-git checkout -b feature/v3
+git checkout -b feature/v4
 
 git checkout main
 git pull origin main
 git add .
-git commit -m "🏆 BenTran Automate CloudFlows ✨ $(date +%d%m%y) $(date +%H%M) ✨"
-git push origin feature/v3
+git commit -m "🏆 BenTran CloudFlows ChordEditor ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git push origin feature/v4
 git checkout main
 git pull origin main
-git merge feature/v3 --no-ff -m "✨🏆 BenTran CloudFlows ✨ $(date +%d%m%y) $(date +%H%M) ✨"
+git merge feature/v4 --no-ff -m "✨🏆 BenTran CloudFlows ChordEditor ✨ $(date +%d%m%y) $(date +%H%M) ✨"
