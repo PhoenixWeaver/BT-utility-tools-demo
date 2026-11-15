@@ -17,10 +17,5 @@ temp-protect-logic.js
 protect.ps1
 
 # Ignore documentation related to protection
-ProtectionManual.md
-publish.ps1
-restore.ps1
-fix-vercel-identity.ps1
-AggProtect.ps1
-
 Github.md
+Github.bak
