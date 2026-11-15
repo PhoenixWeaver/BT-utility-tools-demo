@@ -4,7 +4,7 @@ VirtualCV hosts candidate CVs as static pages on GitHub Pages. Candidates can bu
 
 ## Create and host a CV
 
-1. Open the [CV builder](./CVbuilder/) or the [hosted builder](https://phoenixflix.vercel.app/CVbuilder).
+1. Open the [CV builder](https://phoenixflix.vercel.app/CVbuilder) or the [hosted builder](https://virtualcv.github.io).
 2. Choose a template, edit the sample text, add a profile photo, and review the completed CV.
 3. Download a standalone HTML copy or print and save the CV as a PDF.
 4. To request online hosting, email the standalone HTML file to [the VirtualCV team](mailto:ThePhoenixFlix@gmail.com?subject=VirtualCV%20online%20hosting%20request).
