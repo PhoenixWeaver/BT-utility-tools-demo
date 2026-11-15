@@ -1,0 +1,26 @@
+# Ignore Node.js dependencies
+node_modules/
+package-lock.json
+package.json
+
+# Ignore protection scripts
+minification-index.js
+minification-pages.js
+protect.ps1
+protect-main.bat
+temp-protect-logic.js
+
+# Ignore backup files (Keep these safe locally!)
+*.bak
+
+# Ignore PowerShell script for protection
+protect.ps1
+
+# Ignore documentation related to protection
+ProtectionManual.md
+publish.ps1
+restore.ps1
+fix-vercel-identity.ps1
+AggProtect.ps1
+
+Github.md
