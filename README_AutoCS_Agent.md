@@ -309,20 +309,20 @@ This project demonstrates:
 
 ---
 
-# Learning Context
+# Technical Context
 
-This project was developed while learning and experimenting with Microsoft AI agent tools and automation patterns in Copilot Studio, Power Automate, and related Microsoft services.
+This project was developed as part of hands-on exploration of Microsoft AI agent tooling and workflow automation, using Copilot Studio, Power Automate, and related Microsoft services to prototype an end-to-end support experience.
 
-It is included here as a practical example of an AI support architecture and a demonstration of how the workflow could be structured in a real-world scenario. The main purpose is to show technical understanding and business value in a clear, realistic way without claiming it is a live production deployment.
+It is included here as a practical example of an AI support architecture and a realistic workflow pattern for customer service automation. The focus is on demonstrating technical capability, system design, and business value without implying that this is a live production deployment.
 
-### Example learning areas
+### Key areas explored
 
-- Introduction to developing AI agents
+- AI agent design and conversational flow
 - Building agents in Copilot Chat
 - Building intelligent agents in Microsoft Copilot Studio
-- Building a conversational agent in Copilot Studio
-- Using tools in Copilot Studio
-- Making agents autonomous in Copilot Studio
+- Designing conversational support experiences
+- Using tools and actions within Copilot Studio
+- Enabling autonomous, event-driven workflows
 
 ---
 
