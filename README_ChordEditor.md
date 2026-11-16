@@ -1,5 +1,5 @@
 # 🎸 PhoenixFlixChordEditor
- **PhoenixFlixChordEditor** is available at 👉 [PhoenixFlix.Vercel.App/guitartab](https://PhoenixFlix.Vercel.App/guitartab)
+ **PhoenixFlixChordEditor** is available at 👉 [PhoenixFlix.Vercel.App/guitartab](https://PhoenixFlix.Vercel.App/guitartab) 🎸
 
 **PhoenixFlixChordEditor** is a lightweight, zero-dependency, single-file HTML utility designed for guitarists, piano/organ accompanists, church musicians, and songwriters. It provides a customizable split-screen workspace that keeps your **Intro Guitar Tabs or Multi-Page Traditional Sheet Music** anchored on the left (or top on mobile) while displaying **Editable Chords & Lyrics** in an adjustable, multi-column view on the right (or bottom on mobile).
 
