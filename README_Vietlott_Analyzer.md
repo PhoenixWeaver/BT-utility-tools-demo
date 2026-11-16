@@ -11,8 +11,8 @@ My friends and people on social media were talking about the jackpot, so I decid
 Many lottery-number generator pages, such as [Lottery Number Generator](https://www.lotterynumbergenerator.net/), offer picks inspired by lucky numbers, zodiac signs, or lucky charms. I wanted to explore a different angle: algorithms, probability theory, and historical draw patterns, while comparing jackpots with the odds of winning.
 
 That does **not** make the suggested numbers predictions. The AI’s frequency suggestions are not verified against a complete historical-results dataset, and past draws cannot predict independent future draws. The analysis is an educational exercise—not a way to beat the lottery.
-
-You can try the analyzer here: [Vietlott Lottery Analyzer](https://phoenixflix.vercel.app/Vietlott.html).
+ 
+You can try the analyzer here: 👉 [Vietlott Lottery Analyzer](https://phoenixflix.vercel.app/Vietlott.html).👈
 
 **Lottery can be legal and may benefit organizers and some customers. _However, it is important to remember that the lottery should not be a primary source of income or a substitute for financial planning. Instead, you can try investing in the stock market or exploring other retirement planning options_**. 
 
