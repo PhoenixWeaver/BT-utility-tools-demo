@@ -3,6 +3,9 @@
 
 A static, interactive knowledge base and portfolio demo for an Engineer – Air Network & Partner Management role. The project packages complex air cargo operations, network planning, partner governance, and quantitative decision-making into a structured, browser-based framework inspired by a OneNote-style learning experience.
 
+**Air Network & Partner Management Frameworks** is available at 👉 [phoenixflix.vercel.app/EANPM](https://phoenixflix.vercel.app/EANPM) ⋆｡˚ ✈︎ ✈️ ⋆
+🔐 For full passcode: please contact ThePhoenixFlix@gmail.com 🗝️
+
 ## Overview
 
 This project is designed to showcase the way an air network and partner management professional evaluates carrier/partner ecosystems, aligns operational performance, manages disruption recovery, and applies analytical methods to improve network decisions.
@@ -19,7 +22,7 @@ It covers the end-to-end lifecycle of network engineering across six major secti
 
 - 3-level OneNote-style navigation for quick browsing across sections, subsections, and topic pages
 - Real-time full-text search across the framework content
-- Protected demo sections with a client-side access code (`ARUT`) for deeper material
+- Protected demo sections with a client-side access code for deeper material
 - Responsive layout for desktop and mobile viewing
 - Zero external dependencies: plain HTML, CSS, and vanilla JavaScript
 
