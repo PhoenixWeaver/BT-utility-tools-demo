@@ -1,45 +1,52 @@
-```markdown
 # Air Network & Partner Management Frameworks
 
-A static, interactive knowledge base and portfolio demo for an Engineer – Air Network & Partner Management role. The project packages complex air cargo operations, network planning, partner governance, and quantitative decision-making into a structured, browser-based framework inspired by a OneNote-style learning experience.
+A static, interactive knowledge base and portfolio demo for an **Engineer – Air Network & Partner Management** role. The project packages complex air cargo operations, network planning, partner governance, and quantitative decision-making into a structured, browser-based framework inspired by a OneNote-style learning experience.
 
-**Air Network & Partner Management Frameworks** is available at 👉 [phoenixflix.vercel.app/EANPM](https://phoenixflix.vercel.app/EANPM) ⋆｡˚ ✈︎ ✈️ ⋆
-🔐 For full passcode: please contact ThePhoenixFlix@gmail.com 🗝️
+**Air Network & Partner Management Frameworks** is available at 👉 [phoenixflix.vercel.app/EANPM](https://phoenixflix.vercel.app/EANPM) ✈️  
+🔐 For full passcode: please contact [ThePhoenixFlix@gmail.com](mailto:ThePhoenixFlix@gmail.com) 🗝️
+
+---
 
 ## Overview
 
-This project is designed to showcase the way an air network and partner management professional evaluates carrier/partner ecosystems, aligns operational performance, manages disruption recovery, and applies analytical methods to improve network decisions.
+This project showcases how an air network and partner management professional evaluates carrier and partner ecosystems, aligns operational performance, manages disruption recovery, and applies analytical methods to improve network decisions.
 
-It covers the end-to-end lifecycle of network engineering across six major sections, from partner strategy and selection to optimization, performance management, and analytics.
+It covers the end-to-end lifecycle of network engineering across six core sections—from partner strategy and selection to optimization, performance management, and predictive analytics.
+
+---
 
 ## Live Demo & Contact
 
-- Website: https://phoenixflix.vercel.app/EANPM
-- GitHub: https://github.com/PhoenixWeaver
-- Email: ThePhoenixFlix@gmail.com
+* **Website:** [https://phoenixflix.vercel.app/EANPM](https://phoenixflix.vercel.app/EANPM)
+* **GitHub:** [@PhoenixWeaver](https://github.com/PhoenixWeaver)
+* **Email:** [ThePhoenixFlix@gmail.com](mailto:ThePhoenixFlix@gmail.com)
+
+---
 
 ## Key Features
 
-- 3-level OneNote-style navigation for quick browsing across sections, subsections, and topic pages
-- Real-time full-text search across the framework content
-- Protected demo sections with a client-side access code for deeper material
-- Responsive layout for desktop and mobile viewing
-- Zero external dependencies: plain HTML, CSS, and vanilla JavaScript
+* **3-Level OneNote-Style Navigation:** Collapsible sections, sub-sections, and topic pages for rapid hierarchical browsing.
+* **Real-Time Full-Text Search:** Instant client-side search across all framework content.
+* **Protected Demo Sections:** Public overview pages paired with a client-side access gate for deeper operational playbooks.
+* **Responsive Layout:** Split-pane desktop interface with a slide-out mobile navigation drawer.
+* **Zero External Dependencies:** Built purely with plain HTML, CSS, and vanilla JavaScript.
+
+---
 
 ## Framework Structure
 
-The experience is organized into the following sections:
-
 | Section | Focus |
 | :--- | :--- |
-| Job Description | Role scope, competencies, qualifications, and industry context |
-| Demo Disclaimer | Public preview and confidentiality notes |
-| Section 1 | Partner network strategy and development |
-| Section 2 | Partner selection and implementation |
-| Section 3 | Network optimization and performance management |
-| Section 4 | Operational coordination and issue resolution |
-| Section 5 | Analytics and continuous improvement |
-| Section 6 | Probability, distributions, and optimization |
+| **Job Description** | Role scope, competencies, qualifications, and industry context |
+| **Demo Disclaimer** | Public preview scope and confidentiality notes |
+| **Section 1** | Partner network strategy and development |
+| **Section 2** | Partner selection and implementation |
+| **Section 3** | Network optimization and performance management |
+| **Section 4** | Operational coordination and issue resolution |
+| **Section 5** | Analytics and continuous improvement |
+| **Section 6** | Probability, distributions, and optimization |
+
+---
 
 ## Section Highlights
 
@@ -63,7 +70,7 @@ Explores KPI tracking, bottleneck diagnosis, routing improvements, and business-
 
 ### Section 4 — Operational Coordination & Issue Resolution
 
-Highlights escalation management, irregular operations recovery, and sustained partner performance.
+Highlights escalation management, irregular operations (IROPS) recovery, and sustained partner performance.
 
 ![Summary Section 4](images/S4P5.png)
 
@@ -79,38 +86,27 @@ Applies statistical thinking and optimization methods to decision-making under o
 
 ![Summary Section 6](images/S6P5.png)
 
+---
+
 ## Getting Started
 
-This project requires no build step. You can run it locally as a static site.
+This project requires no build step and can be run locally as a static site.
 
-### Option 1: Open directly
+### Option 1: Open Directly
 
-Open `index.html` in any modern browser.
+Open `index.html` in any modern web browser.
 
-### Option 2: Serve locally
+### Option 2: Serve Locally
 
-```bash
-git clone https://github.com/PhoenixWeaver/AirNetworkManagement.git
-cd AirNetworkManagement
-npx serve .
-```
+Unlocking Protected Content
+By default, the public overview pages (Job Description and Demo Disclaimer) are open to all visitors. To request the access code for the deeper operational playbooks in Sections 1–6, please contact ThePhoenixFlix@gmail.com.
 
-Then open the local URL shown in the terminal.
+Note: The client-side password gate is intended for demo and presentation flow only and is not a cryptographic authentication mechanism.
 
-### Unlocking protected content
-
-By default, the public overview pages are available. To request access to the deeper operational playbooks in Sections 1–6, please contact:
-
-ThePhoenixFlix@gmail.com
-
-Note: this password gate is intended for presentation/demo flow only and is not a secure authentication mechanism.
-
-## Notes
-
+Disclaimer
 This project is a personal portfolio and learning demo based on generalized air cargo and network engineering concepts. It is not affiliated with, sponsored by, or endorsed by any specific airline, freight carrier, or employer.
 
-## License
-
+License
 © 2024–2026 Ben Tran. All rights reserved.
 
-See [LICENSE](LICENSE) for additional legal details.
+See LICENSE for additional legal details.
