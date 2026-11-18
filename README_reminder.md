@@ -75,15 +75,15 @@ What began as a practical tool for mom would be useful for everyone around us—
 
 | Home Dashboard / Bảng Điều Khiển (`VN` / `EN`) | Add New Reminder / Thêm Lịch Nhắc | Edit Date & Alarm Time / Chỉnh Ngày & Giờ Báo |
 | :---: | :---: | :---: |
-| ![Home Dashboard](reminder_EN.jpg) | ![Add New Reminder](reminder_AddingSchedule.jpg) | ![Edit Date & Alarm Time](reminder_EditingSchedule.jpg) |
+| ![Home Dashboard](images/reminder_EN.jpg) | ![Add New Reminder](images/reminder_AddingSchedule.jpg) | ![Edit Date & Alarm Time](images/reminder_EditingSchedule.jpg) |
 
 | Running & Parallel Timers / Hẹn Giờ Chạy Song Song | Create Custom Timer / Tạo Hẹn Giờ Tùy Chỉnh | Ringtone & Vibration Settings / Cài Đặt Chuông & Rung |
 | :---: | :---: | :---: |
-| ![Running Timers](reminder_RunningTimer.jpg) | ![Create Custom Timer](reminder_AddNewTimer.jpg) | ![Ringtone Settings](reminder_Setting.jpg) |
+| ![Running Timers](images/reminder_RunningTimer.jpg) | ![Create Custom Timer](images/reminder_AddNewTimer.jpg) | ![Ringtone Settings](images/reminder_Setting.jpg) |
 
 | Bill Payment Alarm / Báo Thức Hóa Đơn | Timer Alarm / Báo Thức Hẹn Giờ | Offline PWA Install / Cài Đặt PWA Ngoại Tuyến |
 | :---: | :---: | :---: |
-| ![Bill Payment Alarm](reminder_AlertingSchedule.jpg) | ![Timer Alarm](reminder_AlertingTimer.jpg) | ![Offline PWA Install](reminder_Install.jpg) |
+| ![Bill Payment Alarm](images/reminder_AlertingSchedule.jpg) | ![Timer Alarm](images/reminder_AlertingTimer.jpg) | ![Offline PWA Install](images/reminder_Install.jpg) |
 
 ---
 
