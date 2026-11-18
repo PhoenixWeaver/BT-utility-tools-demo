@@ -16,7 +16,7 @@ Built as a single self-contained `index.html` file using **Vanilla JavaScript**,
 
 **PhoenixFlixReminder** started from a simple, everyday need at home: helping my mom remember to pay monthly utility bills online before late fees kicked in, and giving her a reliable, unmistakable alarm when boiling water so she wouldn't forget to turn off the stove and let the whole pot boil dry!
 
-What began as a practical tool for mom quickly turned out to be useful for everyone around us—whether it's helping a sports teammate show up on time to a scheduled match, reminding you before an important job interview, or alerting you to wrap up and prepare for an upcoming meeting.
+What began as a practical tool for mom would be useful for everyone around us—whether it's helping a sports teammate show up on time to a scheduled match, reminding you before an important job interview, or alerting you to wrap up and prepare for an upcoming meeting.
 
 ### ✨ Key Features
 
@@ -90,7 +90,7 @@ What began as a practical tool for mom quickly turned out to be useful for every
 
 **PhoenixFlixReminder** bắt nguồn từ một nhu cầu giản dị hằng ngày trong gia đình: giúp mẹ tôi nhớ đóng tiền điện, nước, điện thoại trực tuyến đúng hạn trước khi bị phạt trễ hạn, đồng thời có một tiếng chuông báo thức thật rõ ràng mỗi khi nấu nước sôi để mẹ không quên tắt bếp làm cạn khô nồi!
 
-Từ một công cụ nhỏ dành cho mẹ, ứng dụng nhanh chóng trở nên hữu ích cho tất cả mọi người xung quanh — từ việc nhắc đồng đội đến sân đúng giờ thi đấu, nhắc lịch phỏng vấn xin việc quan trọng, cho đến báo thức chuẩn bị trước các cuộc họp.
+Từ một công cụ nhỏ dành cho mẹ, ứng dụng có thể hữu ích cho tất cả mọi người xung quanh — từ việc nhắc đồng đội đến sân đúng giờ thi đấu, nhắc lịch phỏng vấn xin việc quan trọng, cho đến báo thức chuẩn bị trước các cuộc họp.
 
 ### ✨ Tính Năng Nổi Bật
 
