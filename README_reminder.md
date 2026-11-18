@@ -1,11 +1,11 @@
 # 🔔 PhoenixFlixReminder — Bill & Task Reminder / Nhắc Hóa Đơn & Việc (PWA)
 
-**PhoenixFlixReminder** is available at 👉 **[phoenixflix.vercel.app/reminder](https://phoenixflix.vercel.app/reminder)** 📅
+👉 **[phoenixflix.vercel.app/reminder](https://phoenixflix.vercel.app/reminder)** 📅
 
-🌐 **[English](#-english-guide)** &nbsp;|&nbsp; **[App Screenshots](#-app-screenshots)** &nbsp;|&nbsp; **[Tiếng Việt](#-hướng-dẫn-tiếng-việt)**
+🌐 **[English](#english)** &nbsp;|&nbsp; **[App Screenshots](#screenshots)** &nbsp;|&nbsp; **[Tiếng Việt](#vietnamese)**
 
 ---
-
+<a id="english"></a>
 ## 🇬🇧 English Guide
 
 A zero-dependency, offline-first **Progressive Web App (PWA)** designed to help you never miss monthly recurring utility bills (electricity, water, phone/internet), personal schedules (sports events, club meetings, interviews), or time-sensitive kitchen timers (boiling water, turning off the stove).
@@ -20,6 +20,11 @@ What began as a practical tool for mom would be useful for everyone around us—
 
 ### ✨ Key Features
 
+- **Flexible Reminder Schedules:**
+  - Choose **One Time** for a single appointment or task.
+  - Choose **Weekly** for repeating events such as Saturday morning sports or Sunday morning church.
+  - Choose **Monthly** for recurring bills and other month-to-month obligations.
+  - Completing a weekly or monthly reminder automatically advances the due date to the next week or month.
 - **Monthly Recurring Bills & Late-Fee Shield:**
   - Pre-configured reminders for Electricity (EVN), Water, and Mobile/Wi-Fi bills.
   - Smart urgency badges automatically highlight bills that are **Due Tomorrow**, **Due Today**, or **Overdue** to prevent late fees or service disconnection.
@@ -44,7 +49,8 @@ What began as a practical tool for mom would be useful for everyone around us—
 2. **Manage Bills & Tasks:**
    - Open the **Bills & Tasks** tab to view urgent bills (*Due Tomorrow / Overdue*) at the top.
    - Tap the circular checkbox next to any bill to mark it **Paid** and auto-schedule next month's due date.
-   - Tap **`+ Add Task`** at the bottom right to add a new bill or personal task (or pick a 1-tap template like *Club Meeting*), set the date, alarm time, and ringtone, then tap **Save**.
+   - Tap **`+ Add Task`** at the bottom right to add a new bill or personal task (or pick a 1-tap template like *Club Meeting*), set the date and alarm time, select **One Time**, **Weekly**, or **Monthly**, choose a ringtone, then tap **Save**.
+   - Use **Weekly** for appointments such as Saturday morning sports or Sunday morning church. Completing the reminder moves it forward by seven days.
    - Tap the **Pencil (`✏️`)** icon on any card to edit its schedule or notes.
 3. **Run Kitchen & Focus Timers:**
    - Switch to the **Quick Timers** tab and tap any preset (such as *Boil Water 5 min* or *Turn Off Stove 10 min*) to start counting down immediately.
@@ -58,28 +64,30 @@ What began as a practical tool for mom would be useful for everyone around us—
 
 1. Open **[phoenixflix.vercel.app/reminder](https://phoenixflix.vercel.app/reminder)** in your browser.
 2. Tap the **Install** button in the top-right header, or use your browser menu:
-   - **iPhone / iPad (Safari):** Tap **Share** at the bottom bar $\rightarrow$ **"Add to Home Screen"**.
-   - **Android (Chrome):** Tap the **3-dot menu (`⋮`)** at the top right $\rightarrow$ **"Install app"** or **"Add to Home screen"**.
+   - **iPhone / iPad (Safari):** Tap **Share** at the bottom bar → **"Add to Home Screen"**.
+   - **Android (Chrome):** Tap the **3-dot menu (`⋮`)** at the top right → **"Install app"** or **"Add to Home screen"**.
    - **Desktop (Chrome / Edge):** Click the **Install (`+`)** icon on the right side of the address bar.
 
 ---
 
-## 📸 App Screenshots
+<a id="screenshots"></a>
+## 📸 App Screenshots / Ảnh Chụp Màn Hình
 
-| Home Dashboard (`VN` / `EN`) | Add New Reminder | Edit Date & Alarm Time |
+| Home Dashboard / Bảng Điều Khiển (`VN` / `EN`) | Add New Reminder / Thêm Lịch Nhắc | Edit Date & Alarm Time / Chỉnh Ngày & Giờ Báo |
 | :---: | :---: | :---: |
-| ![Home Dashboard](images/reminder_EN.jpg) | ![Add New Reminder](images/reminder_AddingSchedule.jpg) | ![Edit Date & Alarm Time](images/reminder_EditingSchedule.jpg) |
+| ![Home Dashboard](reminder_EN.jpg) | ![Add New Reminder](reminder_AddingSchedule.jpg) | ![Edit Date & Alarm Time](reminder_EditingSchedule.jpg) |
 
-| Running & Parallel Timers | Create Custom Timer | Ringtone & Vibration Settings |
+| Running & Parallel Timers / Hẹn Giờ Chạy Song Song | Create Custom Timer / Tạo Hẹn Giờ Tùy Chỉnh | Ringtone & Vibration Settings / Cài Đặt Chuông & Rung |
 | :---: | :---: | :---: |
-| ![Running Timers](images/reminder_RunningTimer.jpg) | ![Create Custom Timer](images/reminder_AddNewTimer.jpg) | ![Ringtone Settings](images/reminder_Setting.jpg) |
+| ![Running Timers](reminder_RunningTimer.jpg) | ![Create Custom Timer](reminder_AddNewTimer.jpg) | ![Ringtone Settings](reminder_Setting.jpg) |
 
-| Bill Payment Alarm Overlay | Timer Alarm Overlay | Offline PWA Install Guide |
+| Bill Payment Alarm / Báo Thức Hóa Đơn | Timer Alarm / Báo Thức Hẹn Giờ | Offline PWA Install / Cài Đặt PWA Ngoại Tuyến |
 | :---: | :---: | :---: |
-| ![Bill Payment Alarm](images/reminder_AlertingSchedule.jpg) | ![Timer Alarm](images/reminder_AlertingTimer.jpg) | ![Offline PWA Install](images/reminder_Install.jpg) |
+| ![Bill Payment Alarm](reminder_AlertingSchedule.jpg) | ![Timer Alarm](reminder_AlertingTimer.jpg) | ![Offline PWA Install](reminder_Install.jpg) |
 
 ---
 
+<a id="vietnamese"></a>
 ## 🇻🇳 Hướng Dẫn Tiếng Việt
 
 **PhoenixFlixReminder** là ứng dụng web tiến bộ (**PWA**) gọn nhẹ, không phụ thuộc thư viện ngoài và hoạt động **100% Offline**, giúp bạn không bao giờ quên đóng các hóa đơn định kỳ hàng tháng (tiền điện, nước, điện thoại/internet), lịch hẹn cá nhân (thi đấu thể thao, họp CLB, phỏng vấn) hay các bộ hẹn giờ nấu bếp khẩn cấp (nấu nước sôi, tắt bếp).
@@ -90,10 +98,15 @@ What began as a practical tool for mom would be useful for everyone around us—
 
 **PhoenixFlixReminder** bắt nguồn từ một nhu cầu giản dị hằng ngày trong gia đình: giúp mẹ tôi nhớ đóng tiền điện, nước, điện thoại trực tuyến đúng hạn trước khi bị phạt trễ hạn, đồng thời có một tiếng chuông báo thức thật rõ ràng mỗi khi nấu nước sôi để mẹ không quên tắt bếp làm cạn khô nồi!
 
-Từ một công cụ nhỏ dành cho mẹ, ứng dụng có thể hữu ích cho tất cả mọi người xung quanh — từ việc nhắc đồng đội đến sân đúng giờ thi đấu, nhắc lịch phỏng vấn xin việc quan trọng, cho đến báo thức chuẩn bị trước các cuộc họp.
+Từ một công cụ nhỏ dành cho mẹ, ứng dụng có thể trở nên hữu ích cho mọi người xung quanh — từ việc nhắc đồng đội đến sân đúng giờ thi đấu, nhắc lịch phỏng vấn xin việc quan trọng, cho đến báo thức chuẩn bị trước các cuộc họp.
 
 ### ✨ Tính Năng Nổi Bật
 
+- **Chu Kỳ Nhắc Linh Hoạt:**
+  - Chọn **Một lần** cho cuộc hẹn hoặc công việc chỉ cần nhắc một lần.
+  - Chọn **Hàng tuần** cho lịch lặp lại, ví dụ thể thao sáng thứ Bảy hoặc đi nhà thờ sáng Chủ Nhật.
+  - Chọn **Hàng tháng** cho hóa đơn và các khoản phải thực hiện theo tháng.
+  - Sau khi đánh dấu hoàn thành, lịch hàng tuần tự dời sang tuần sau và lịch hàng tháng tự dời sang tháng sau.
 - **Quản Lý Hóa Đơn Định Kỳ & Tránh Phí Phạt:**
   - Tạo sẵn lịch nhắc cho tiền Điện (EVN), Nước và Điện thoại/Wi-Fi.
   - Nhãn cảnh báo thông minh tự động làm nổi bật các khoản **Sắp đến hạn**, **Hôm nay**, hoặc **Quá hạn** để tránh bị phạt trễ hạn hay cắt dịch vụ.
@@ -118,7 +131,8 @@ Từ một công cụ nhỏ dành cho mẹ, ứng dụng có thể hữu ích ch
 2. **Quản Lý Hóa Đơn & Công Việc:**
    - Mở tab **Hóa đơn & Việc** để xem các khoản cần đóng gấp (*Sắp đến hạn / Quá hạn*) ngay trên cùng.
    - Bấm vào ô tròn bên cạnh hóa đơn để đánh dấu **Đã đóng** và tự động gia hạn sang tháng sau.
-   - Bấm nút **`+ Thêm việc`** ở góc dưới bên phải để tạo lịch nhắc mới (hoặc chọn mẫu *Đi họp CLB*, *Bảo hiểm xe*), chọn ngày, giờ báo chuông, kiểu chuông rồi bấm **Lưu**.
+   - Bấm nút **`+ Thêm việc`** ở góc dưới bên phải để tạo lịch nhắc mới (hoặc chọn mẫu *Đi họp CLB*, *Bảo hiểm xe*), chọn ngày, giờ báo chuông, chu kỳ **Một lần**, **Hàng tuần** hoặc **Hàng tháng**, kiểu chuông rồi bấm **Lưu**.
+   - Dùng **Hàng tuần** cho lịch như thể thao sáng thứ Bảy hoặc đi nhà thờ sáng Chủ Nhật. Sau khi hoàn thành, lịch tự dời sang đúng một tuần sau.
    - Bấm biểu tượng **Bút chì (`✏️`)** trên từng thẻ để chỉnh sửa lịch hoặc ghi chú.
 3. **Dùng Bộ Hẹn Giờ Nấu Bếp & Tập Trung:**
    - Chuyển sang tab **Hẹn giờ nhanh** và bấm vào mẫu có sẵn (như *Nấu nước sôi 5p* hoặc *Tắt bếp / Nấu ăn 10p*) để bắt đầu đếm ngược ngay.
@@ -132,11 +146,9 @@ Từ một công cụ nhỏ dành cho mẹ, ứng dụng có thể hữu ích ch
 
 1. Mở **[phoenixflix.vercel.app/reminder](https://phoenixflix.vercel.app/reminder)** trên trình duyệt điện thoại hoặc máy tính.
 2. Bấm nút **Cài App (`Install`)** ở góc trên bên phải, hoặc làm theo hướng dẫn trên trình duyệt:
-   - **iPhone / iPad (Safari):** Bấm biểu tượng **Chia sẻ** ở thanh dưới cùng $\rightarrow$ chọn **"Thêm vào MH chính"**.
-   - **Android (Chrome):** Bấm biểu tượng **3 chấm (`⋮`)** ở góc trên bên phải $\rightarrow$ chọn **"Cài đặt ứng dụng"** hoặc **"Thêm vào Màn hình chính"**.
+   - **iPhone / iPad (Safari):** Bấm biểu tượng **Chia sẻ** ở thanh dưới cùng → chọn **"Thêm vào MH chính"**.
+   - **Android (Chrome):** Bấm biểu tượng **3 chấm (`⋮`)** ở góc trên bên phải → chọn **"Cài đặt ứng dụng"** hoặc **"Thêm vào Màn hình chính"**.
    - **Máy tính (Chrome / Edge):** Bấm biểu tượng **Cài đặt (`+`)** ở góc phải thanh địa chỉ trình duyệt.
-
----
 
 ## 🛠️ Tech Stack & Privacy / Công Nghệ & Bảo Mật
 
