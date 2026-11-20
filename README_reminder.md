@@ -8,7 +8,7 @@
 <a id="english"></a>
 ## 🇬🇧 English Guide
 
-A zero-dependency, offline-ready **Progressive Web App (PWA)** designed to help you stay on top of monthly recurring utility bills (electricity, water, phone/internet), personal schedules (sports events, club meetings, interviews), and time-sensitive kitchen timers (boiling water, turning off the stove).
+A zero-dependency **Progressive Web App (PWA)** designed to help you stay on top of monthly recurring utility bills (electricity, water, phone/internet), personal schedules (sports events, club meetings, interviews), and time-sensitive kitchen timers (boiling water, turning off the stove).
 
 Built as a single self-contained `index.html` file using **Vanilla JavaScript**, **Tailwind CSS**, the **Web Audio API**, **Screen Wake Lock API**, and **Service Worker Notifications**, it works smoothly on Android, iOS, and desktop browsers—with all of your data stored privately on your device and zero accounts or servers required.
 
@@ -16,7 +16,7 @@ Built as a single self-contained `index.html` file using **Vanilla JavaScript**,
 
 **PhoenixFlixReminder** started from a simple, everyday need at home: helping my mom remember to pay monthly utility bills online before late fees kicked in, and giving her a reliable, unmistakable alarm when boiling water so she wouldn't forget to turn off the stove and let the whole pot boil dry!
 
-What began as a practical tool for mom grew into something useful for everyone around us—whether it's helping a sports teammate show up on time to a scheduled match, reminding you before an important job interview, or alerting you to wrap up and prepare for an upcoming meeting.
+What began as a practical tool for mom grew into something may be useful for everyone around us—whether it's helping a sports teammate show up on time to a scheduled match, reminding you before an important job interview, or alerting you to wrap up and prepare for an upcoming meeting.
 
 ### ✨ Key Features
 
@@ -41,11 +41,10 @@ What began as a practical tool for mom grew into something useful for everyone a
   - 1-tap quick presets for everyday tasks (*Boil Water 5 min*, *Turn Off Stove 10 min*, *Simmer / Stew 20 min*, *Power Break 15 min*).
   - **Automatic Screen Wake Lock:** Keeps your screen awake while a countdown is actively running (and re-acquires the lock if you switch back to the tab), then releases it automatically when finished so your kitchen timer stays visible and ready to ring.
   - Run multiple timers simultaneously with a live floating mini-timer banner when switching tabs, or save your own custom presets.
-- **Offline Synthesized Ringtones, Smart Alarm Queue & System Notifications:**
-  - Uses the browser's native **Web Audio API** to synthesize three ringtone styles with zero external audio files: **Urgent Alert** (bills/stove), **Standard Chime** (phone-style ring), and **Gentle Melody** (meetings/breaks), unlocked automatically on your first tap.
-  - **Smart Alarm Queue:** If multiple reminders or timers trigger at the exact same minute, they queue up cleanly and ring one after another as you dismiss each alert—nothing gets skipped or overwritten.
-  - **System Notification Banners:** When notifications are allowed, alarms also pop up a system banner (even if you're viewing another browser tab); tapping the banner brings you straight back to the alarm overlay.
-  - Fullscreen flashing alarm overlay with **Dismiss Alarm**, **Snooze 5 Min**, and **Mark Paid / Mark Done** actions, plus optional device vibration on Android.
+- **Built-in Ringtones, Smart Alarm Queue & System Notifications:**
+  - Uses the browser's **Web Audio API** to play three built-in ringtone styles (**Urgent Alert**, **Standard Chime**, and **Gentle Melody**) with zero external audio files.
+  - **Smart Alarm Queue:** If multiple reminders or timers trigger at the same minute, they queue up and ring one after another as you dismiss each alert—nothing gets skipped or overwritten.
+  - **Fullscreen Alarm Overlay:** Flashing alert screen with **Dismiss Alarm**, **Snooze 5 Min**, and **Mark Paid / Mark Done** actions, plus optional vibration on supported Android devices.
 - **Bilingual Interface (`VN` / `EN`) & Installable PWA:**
   - Switch between Vietnamese and English anytime from the top header without interrupting active timers.
   - Installable directly to your home screen via Web App Manifest and Service Worker caching for quick, app-like access anytime.
@@ -67,12 +66,13 @@ What began as a practical tool for mom grew into something useful for everyone a
    - Open the **Ringtones** tab to preview and choose your default ringtone, toggle vibration, or test the fullscreen alarm.
    - Tap **`🌐 VN` / `🌐 EN`** in the top header to switch languages anytime.
 
-### 💡 Tips for the Best Offline & Alarm Experience
+### 🔔 Sound & Notification Setup
 
-- **First-Time Offline Setup:** Open the app once while connected to Wi-Fi or mobile data so your browser caches the app locally. After that, your saved bills, tasks, history, and Web Audio ringtones remain accessible even when you're offline.
-- **Keep the App Open for Live Alarms:** Like all browser-based PWAs, timers and scheduled alarms ring right on time while the app is open on screen (and **Screen Wake Lock** automatically keeps your display awake during countdowns). For overnight wake-up alarms while your phone is locked, we recommend pairing it with your phone's built-in Clock app.
-- **One Tap Unlocks Sound & Notifications:** Tap anywhere on the screen after opening the app to unlock browser audio and allow notification banners—and keep your phone's media volume turned up so ringtones play loud and clear.
-- **iPhone / iPad Tip:** Add the app to your Home Screen via Safari's **Share → Add to Home Screen** for the full-screen experience and local notification support.
+**PhoenixFlixReminder** respects your phone's notification setup and sound privacy settings:
+
+- **Online for Alarms:** Keep the app online and open for alarm sounds and notifications. When offline, it works as a silent visual reminder only.
+- **Sound Privacy:** Mobile browsers require a quick tap on the screen to allow audio, and alarms follow your phone's media volume (they won't override Silent mode).
+- **Notifications:** Web apps respect your phone's lock screen and Do Not Disturb settings—for overnight locked-screen alarms, pair with your phone's built-in Clock app.
 
 ### 📲 Install as an App (PWA)
 
@@ -95,16 +95,16 @@ What began as a practical tool for mom grew into something useful for everyone a
 | :---: | :---: | :---: |
 | ![Running Timers](images/reminder_RunningTimer.jpg) | ![Create Custom Timer](images/reminder_AddNewTimer.jpg) | ![Ringtone Settings](images/reminder_Setting.jpg) |
 
-| Bill Payment Alarm / Báo Thức Hóa Đơn | Timer Alarm / Báo Thức Hẹn Giờ | Offline PWA Install / Cài Đặt PWA Ngoại Tuyến |
+| Bill Payment Alarm / Báo Thức Hóa Đơn | Timer Alarm / Báo Thức Hẹn Giờ | Install as PWA / Cài Đặt Ứng Dụng (PWA) |
 | :---: | :---: | :---: |
-| ![Bill Payment Alarm](images/reminder_AlertingSchedule.jpg) | ![Timer Alarm](images/reminder_AlertingTimer.jpg) | ![Offline PWA Install](images/reminder_Install.jpg) |
+| ![Bill Payment Alarm](images/reminder_AlertingSchedule.jpg) | ![Timer Alarm](images/reminder_AlertingTimer.jpg) | ![Install as PWA](images/reminder_Install.jpg) |
 
 ---
 
 <a id="vietnamese"></a>
 ## 🇻🇳 Hướng Dẫn Tiếng Việt
 
-**PhoenixFlixReminder** là ứng dụng web tiến bộ (**PWA**) gọn nhẹ, sẵn sàng hoạt động ngay cả khi ngoại tuyến, giúp bạn quản lý các hóa đơn định kỳ hàng tháng (tiền điện, nước, điện thoại/internet), lịch hẹn cá nhân (thi đấu thể thao, họp CLB, phỏng vấn) và các bộ hẹn giờ nấu bếp khẩn cấp (nấu nước sôi, tắt bếp).
+**PhoenixFlixReminder** là ứng dụng web tiến bộ (**PWA**) gọn nhẹ, tiện lợi giúp bạn quản lý các hóa đơn định kỳ hàng tháng (tiền điện, nước, điện thoại/internet), lịch hẹn cá nhân (thi đấu thể thao, họp CLB, phỏng vấn) và các bộ hẹn giờ nấu bếp khẩn cấp (nấu nước sôi, tắt bếp).
 
 Được đóng gói trong một tệp `index.html` duy nhất bằng **Vanilla JavaScript**, **Tailwind CSS**, **Web Audio API**, **Screen Wake Lock API** và **Thông báo Service Worker**, ứng dụng chạy mượt mà trên Android, iOS và máy tính — với toàn bộ dữ liệu được lưu riêng tư ngay trên thiết bị của bạn mà không cần tài khoản hay máy chủ trung gian.
 
@@ -112,7 +112,7 @@ What began as a practical tool for mom grew into something useful for everyone a
 
 **PhoenixFlixReminder** bắt nguồn từ một nhu cầu giản dị hằng ngày trong gia đình: giúp mẹ tôi nhớ đóng tiền điện, nước, điện thoại trực tuyến đúng hạn trước khi bị phạt trễ hạn, đồng thời có một tiếng chuông báo thức thật rõ ràng mỗi khi nấu nước sôi để mẹ không quên tắt bếp làm cạn khô nồi!
 
-Từ một công cụ nhỏ dành cho mẹ, ứng dụng trở nên hữu ích cho mọi người xung quanh — từ việc nhắc đồng đội đến sân đúng giờ thi đấu, nhắc lịch phỏng vấn xin việc quan trọng, cho đến báo thức chuẩn bị trước các cuộc họp.
+Từ một công cụ nhỏ dành cho mẹ, ứng dụng có thể hữu ích cho mọi người xung quanh — từ việc nhắc đồng đội đến sân đúng giờ thi đấu, nhắc lịch phỏng vấn xin việc quan trọng, cho đến báo thức chuẩn bị trước các cuộc họp.
 
 ### ✨ Tính Năng Nổi Bật
 
@@ -137,11 +137,10 @@ Từ một công cụ nhỏ dành cho mẹ, ứng dụng trở nên hữu ích c
   - Các mẫu bấm nhanh cho sinh hoạt hằng ngày (*Nấu nước sôi 5p*, *Tắt bếp / Nấu ăn 10p*, *Hầm / Kho 20p*, *Nghỉ ngắn 15p*).
   - **Tự động giữ sáng màn hình (Screen Wake Lock):** Giữ màn hình không bị tắt trong lúc đồng hồ đang đếm ngược (và tự bật lại khi quay về tab), rồi tự tắt khi hoàn thành để bạn yên tâm nấu bếp mà không lo lỡ chuông.
   - Hỗ trợ chạy song song nhiều bộ đếm cùng lúc, hiển thị thanh đếm thu nhỏ ở đầu trang khi chuyển tab và cho phép lưu mẫu tùy chỉnh.
-- **Chuông Báo Thức Offline, Hàng Đợi Thông Minh & Thông Báo Hệ Thống:**
-  - Sử dụng **Web Audio API** của trình duyệt để tự tổng hợp 3 kiểu chuông không cần tệp âm thanh ngoài: **Báo động khẩn cấp** (hóa đơn/tắt bếp), **Chuông tiêu chuẩn** (chuông điện thoại), và **Nhạc nhẹ nhàng** (họp CLB/nghỉ ngơi), tự động mở khóa âm thanh ngay lần chạm đầu tiên.
-  - **Hàng đợi báo thức thông minh:** Nếu có nhiều lịch nhắc hoặc bộ hẹn giờ đến cùng một phút, ứng dụng sẽ xếp hàng lần lượt phát từng báo thức sau khi bạn tắt chuông trước đó — không bao giờ bị đè hay bỏ sót.
-  - **Thông báo hệ thống:** Khi bạn cấp quyền thông báo, báo thức sẽ hiển thị thêm biểu ngữ hệ thống ngay cả khi bạn đang ở tab khác; chạm vào thông báo để quay lại ngay màn hình báo thức.
-  - Màn hình báo thức nhấp nháy toàn màn hình với nút **Tắt chuông**, **Báo lại 5 phút**, và **Đã đóng / Hoàn thành**, kèm chế độ rung trên điện thoại Android.
+- **Chuông Báo Thức Tích Hợp, Hàng Đợi Thông Minh & Thông Báo Hệ Thống:**
+  - Sử dụng **Web Audio API** của trình duyệt để phát 3 kiểu chuông tích hợp (**Báo động khẩn cấp**, **Chuông tiêu chuẩn**, và **Nhạc nhẹ nhàng**) mà không cần tải tệp âm thanh ngoài.
+  - **Hàng đợi báo thức thông minh:** Nếu nhiều lịch nhắc hoặc bộ hẹn giờ đến cùng một phút, ứng dụng sẽ xếp hàng phát lần lượt sau khi bạn tắt chuông trước đó — không bị đè hay bỏ sót.
+  - **Màn hình báo thức toàn màn hình:** Nhấp nháy cảnh báo kèm nút **Tắt chuông**, **Báo lại 5 phút**, và **Đã đóng / Hoàn thành**, cùng chế độ rung trên các thiết bị Android hỗ trợ.
 - **Giao Diện Song Ngữ (`VN` / `EN`) & Cài Đặt PWA:**
   - Chuyển đổi tức thì giữa tiếng Việt và tiếng Anh ngay trên thanh tiêu đề mà không làm gián đoạn đồng hồ đang chạy.
   - Cài đặt trực tiếp lên màn hình chính điện thoại qua Web App Manifest và Service Worker để mở nhanh như ứng dụng thật.
@@ -163,12 +162,13 @@ Từ một công cụ nhỏ dành cho mẹ, ứng dụng trở nên hữu ích c
    - Mở tab **Cài đặt chuông** để nghe thử, chọn nhạc chuông mặc định, bật/tắt chế độ rung hoặc kiểm tra màn hình báo thức.
    - Bấm nút **`🌐 EN` / `🌐 VN`** trên thanh tiêu đề để đổi ngôn ngữ bất cứ lúc nào.
 
-### 💡 Mẹo Nhỏ Để Báo Thức & Chế Độ Offline Hoạt Động Tốt Nhất
+### 🔔 Cài Đặt Âm Thanh & Thông Báo
 
-- **Thiết lập Offline lần đầu:** Chỉ cần mở ứng dụng một lần khi có Wi-Fi hoặc 4G để trình duyệt lưu bộ nhớ đệm cục bộ. Sau đó, toàn bộ danh sách hóa đơn, công việc, lịch sử và chuông báo Web Audio đều sẵn sàng ngay cả khi mất mạng.
-- **Giữ ứng dụng mở khi chờ chuông:** Cũng như mọi ứng dụng web (PWA) khác, bộ đếm ngược và lịch nhắc sẽ reo chính xác khi ứng dụng đang mở trên màn hình (chế độ **Screen Wake Lock** tự động giữ sáng màn hình khi đang đếm ngược). Với các báo thức qua đêm lúc khóa màn hình, bạn nên dùng kèm ứng dụng Đồng hồ mặc định của điện thoại.
-- **Chạm nhẹ 1 lần để bật âm thanh & thông báo:** Sau khi mở ứng dụng, hãy chạm nhẹ vào màn hình để trình duyệt kích hoạt âm thanh và quyền thông báo — và nhớ bật âm lượng phương tiện trên máy để nghe chuông rõ nhất.
-- **Mẹo cho iPhone / iPad:** Thêm ứng dụng ra Màn hình chính qua Safari (**Chia sẻ → Thêm vào MH chính**) để có giao diện toàn màn hình và hỗ trợ thông báo tốt nhất.
+**PhoenixFlixReminder** tôn trọng cài đặt thông báo và quyền riêng tư âm thanh trên điện thoại của bạn:
+
+- **Online để phát chuông:** Hãy giữ ứng dụng có kết nối mạng và đang mở để phát chuông báo thức và thông báo. Khi mất kết nối mạng, ứng dụng vẫn hiển thị lịch nhắc nhưng không phát âm thanh.
+- **Quyền riêng tư âm thanh:** Trình duyệt di động cần bạn chạm nhẹ màn hình để bật âm thanh và tuân theo âm lượng phương tiện của máy (không vượt qua chế độ Im lặng).
+- **Thông báo:** Ứng dụng web tôn trọng chế độ khóa màn hình và Không làm phiền của điện thoại — với báo thức qua đêm khi khóa máy, bạn nên dùng ứng dụng Đồng hồ mặc định.
 
 ### 📲 Cài Đặt Như Ứng Dụng (PWA)
 
@@ -184,5 +184,5 @@ Từ một công cụ nhỏ dành cho mẹ, ứng dụng trở nên hữu ích c
 
 - **Frontend / Giao diện:** HTML5, Vanilla JavaScript (ES6+), Tailwind CSS (CDN)
 - **Audio & Device APIs / Âm thanh & Thiết bị:** Native Web Audio API (`AudioContext` oscillators — zero external audio files / *tổng hợp âm thanh trực tiếp không cần tệp ngoài*), Screen Wake Lock API, and Notifications API
-- **Offline & Storage / Lưu trữ:** Service Worker API (cache + `notificationclick`), Web App Manifest, and Browser `localStorage`
+- **Storage & PWA / Lưu trữ & PWA:** Service Worker API (cache + `notificationclick`), Web App Manifest, and Browser `localStorage`
 - **Privacy First / Bảo mật tuyệt đối:** 100% of your data stays locally on your device—no accounts, cloud databases, or tracking scripts. *(Toàn bộ dữ liệu được lưu cục bộ ngay trên thiết bị của bạn — không cần tài khoản, không lưu đám mây và không theo dõi người dùng).*
